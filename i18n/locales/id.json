@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "explore": "Jelajahi",
+    "profile": "Profil"
+  },
+  "footer": {
+    "about": "Tentang",
+    "privacy": "Privasi",
+    "terms": "Syarat",
+    "support": "Dukungan",
+    "copyright": "© 2024 Tlaktir Inc."
+  },
+  "profile": {
+    "handle": "{'@'}coffee_artist",
+    "tagline": "\"Melukis dengan kafein dan impian.\"",
+    "supportBtn": "Dukung",
+    "stats": {
+      "supporters": "Pendukung",
+      "artworks": "Karya Seni",
+      "happyVibes": "Vibes Positif"
+    },
+    "recentSupporters": "Pendukung Terbaru",
+    "viewAll": "Lihat semua",
+    "behindBeans": {
+      "title": "Di Balik Biji Kopi",
+      "description": "Jelajahi proses mengubah seduhan pagi menjadi mahakarya digital berkelas museum. Setiap kopi yang kamu beli membantu mendanai kanvas baru dan biji kopi premium.",
+      "gallery": "Lihat Galeri",
+      "reel": "Tonton Reel"
+    }
+  },
+  "support": {
+    "title": "Dukung The Coffee Artist",
+    "subtitle": "Setiap kopi memicu kreasi baru",
+    "selectLevel": "Pilih tingkat dukunganmu",
+    "privateMessage": "Pesan Pribadi",
+    "messagePlaceholder": "Katakan sesuatu yang baik...",
+    "payBtn": "Bayar dan Dukung",
+    "secureCheckout": "Pembayaran terenkripsi aman oleh Tlaktir",
+    "thankYou": "Terima kasih! Mendukung dengan {coffees} kopi seharga ${price}!"
+  }
+}

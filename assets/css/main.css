@@ -1,0 +1,205 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* ─── Design Tokens ─────────────────────────────────────── */
+@theme {
+  /* Colors */
+  --color-primary:                  #6d5e00;
+  --color-primary-container:        #ffdd00;
+  --color-on-primary:               #ffffff;
+  --color-on-primary-container:     #716100;
+  --color-primary-fixed:            #ffe251;
+  --color-primary-fixed-dim:        #e4c600;
+  --color-on-primary-fixed:         #211b00;
+  --color-on-primary-fixed-variant: #524600;
+  --color-inverse-primary:          #e4c600;
+
+  --color-secondary:                #5f5e5e;
+  --color-secondary-container:      #e2dfde;
+  --color-on-secondary:             #ffffff;
+  --color-on-secondary-container:   #636262;
+  --color-secondary-fixed:          #e5e2e1;
+  --color-secondary-fixed-dim:      #c8c6c5;
+  --color-on-secondary-fixed:       #1b1c1c;
+  --color-on-secondary-fixed-variant: #474746;
+
+  --color-tertiary:                 #aa3621;
+  --color-tertiary-container:       #ffd5cd;
+  --color-on-tertiary:              #ffffff;
+  --color-on-tertiary-container:    #ae3924;
+  --color-tertiary-fixed:           #ffdad3;
+  --color-tertiary-fixed-dim:       #ffb4a5;
+  --color-on-tertiary-fixed:        #3f0400;
+  --color-on-tertiary-fixed-variant: #891e0c;
+
+  --color-surface:                  #f9f9f9;
+  --color-surface-muted:            #FFFFFF;
+  --color-surface-bright:           #f9f9f9;
+  --color-surface-dim:              #dadada;
+  --color-surface-variant:          #e2e2e2;
+  --color-surface-tint:             #6d5e00;
+  --color-surface-container:        #eeeeee;
+  --color-surface-container-low:    #f3f3f3;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high:   #e8e8e8;
+  --color-surface-container-highest:#e2e2e2;
+  --color-on-surface:               #1b1b1b;
+  --color-on-surface-variant:       #4c4732;
+  --color-inverse-surface:          #303030;
+  --color-inverse-on-surface:       #f1f1f1;
+
+  --color-background:               #f9f9f9;
+  --color-background-alt:           #FAF8F0;
+  --color-on-background:            #1b1b1b;
+
+  --color-outline:                  #7e775f;
+  --color-outline-variant:          #cfc6ab;
+  --color-border-default:           #E5E7EB;
+
+  --color-error:                    #ba1a1a;
+  --color-error-container:          #ffdad6;
+  --color-on-error:                 #ffffff;
+  --color-on-error-container:       #93000a;
+
+  --color-text-tertiary:            #717171;
+
+  /* Typography */
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui;
+
+  --text-display-md:                64px;
+  --text-display-md--line-height:   72px;
+  --text-display-md--font-weight:   800;
+  --text-display-md--letter-spacing:-0.02em;
+
+  --text-display-md-mobile:         48px;
+  --text-display-md-mobile--line-height: 56px;
+  --text-display-md-mobile--font-weight: 800;
+
+  --text-headline-xl:               24px;
+  --text-headline-xl--line-height:  32px;
+  --text-headline-xl--font-weight:  700;
+
+  --text-headline-lg:               22px;
+  --text-headline-lg--line-height:  28px;
+  --text-headline-lg--font-weight:  700;
+
+  --text-body-md:                   20px;
+  --text-body-md--line-height:      30px;
+  --text-body-md--font-weight:      400;
+
+  --text-body-sm:                   18px;
+  --text-body-sm--line-height:      26px;
+  --text-body-sm--font-weight:      400;
+
+  --text-label-xs:                  16px;
+  --text-label-xs--line-height:     20px;
+  --text-label-xs--font-weight:     600;
+  --text-label-xs--letter-spacing:  0.01em;
+
+  /* Spacing */
+  --spacing-unit-1:           4px;
+  --spacing-unit-2:           8px;
+  --spacing-unit-3:           12px;
+  --spacing-unit-4:           16px;
+  --spacing-unit-5:           18px;
+  --spacing-unit-6:           20px;
+  --spacing-unit-7:           24px;
+  --spacing-unit-8:           28px;
+  --spacing-gutter:           16px;
+  --spacing-container-margin: 24px;
+
+  /* Border Radius */
+  --radius-DEFAULT: 1rem;
+  --radius-lg:      2rem;
+  --radius-xl:      3rem;
+  --radius-full:    9999px;
+}
+
+/* ─── DaisyUI Themes ─────────────────────────────────────── */
+@plugin "daisyui/theme" {
+  name: "tlaktir";
+  default: true;
+  color-scheme: light;
+  --color-primary: #ffdd00;
+  --color-primary-content: #716100;
+  --color-secondary: #5f5e5e;
+  --color-secondary-content: #ffffff;
+  --color-accent: #aa3621;
+  --color-accent-content: #ffffff;
+  --color-neutral: #1b1b1b;
+  --color-neutral-content: #f9f9f9;
+  --color-base-100: #f9f9f9;
+  --color-base-200: #eeeeee;
+  --color-base-300: #e2e2e2;
+  --color-base-content: #1b1b1b;
+  --color-error: #ba1a1a;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  color-scheme: dark;
+  --color-primary: #e4c600;
+  --color-primary-content: #1a1500;
+  --color-secondary: #9e9e9e;
+  --color-secondary-content: #1b1b1b;
+  --color-accent: #ff8a70;
+  --color-accent-content: #3f0400;
+  --color-neutral: #2a2a2a;
+  --color-neutral-content: #f0f0f0;
+  --color-base-100: #1a1a1a;
+  --color-base-200: #242424;
+  --color-base-300: #2e2e2e;
+  --color-base-content: #e8e8e8;
+  --color-error: #ef9a9a;
+}
+
+/* ─── Base ───────────────────────────────────────────────── */
+body {
+  font-family: 'Hanken Grotesk', ui-sans-serif, system-ui;
+  min-height: max(884px, 100dvh);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+/* ─── Custom Utilities ───────────────────────────────────── */
+.hard-shadow {
+  box-shadow: 4px 4px 0px 0px #5f5e5e;
+}
+
+.hard-shadow-dark {
+  box-shadow: 4px 4px 0px 0px #222222;
+}
+
+.hard-shadow-hover {
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.hard-shadow-hover:hover {
+  box-shadow: 6px 6px 0px 0px #222222;
+  transform: translate(-2px, -2px);
+}
+
+.support-glow {
+  box-shadow: 0 0 20px rgba(255, 221, 0, 0.4);
+}
+
+.payment-pill-selected {
+  border: 3px solid #1b1b1b !important;
+}
+
+/* ─── Dark Mode Overrides ────────────────────────────────── */
+.dark .hard-shadow-dark {
+  box-shadow: 4px 4px 0px 0px #e4c600;
+}
+.dark .hard-shadow-hover:hover {
+  box-shadow: 6px 6px 0px 0px #e4c600;
+}
+.dark .payment-pill-selected {
+  border: 3px solid #ffe251 !important;
+}
+.dark .support-glow {
+  box-shadow: 0 0 24px rgba(228, 198, 0, 0.5);
+}

@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "home": "Home",
+    "explore": "Explore",
+    "profile": "Profile"
+  },
+  "footer": {
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "support": "Support",
+    "copyright": "© 2024 Tlaktir Inc."
+  },
+  "profile": {
+    "handle": "{'@'}coffee_artist",
+    "tagline": "\"Painting with caffeine and dreams.\"",
+    "supportBtn": "Support",
+    "stats": {
+      "supporters": "Supporters",
+      "artworks": "Artworks",
+      "happyVibes": "Happy Vibes"
+    },
+    "recentSupporters": "Recent Supporters",
+    "viewAll": "View all",
+    "behindBeans": {
+      "title": "Behind the Beans",
+      "description": "Explore the process of turning morning brews into museum-worthy digital masterpieces. Every coffee you buy helps fund new canvases and premium grounds.",
+      "gallery": "View Gallery",
+      "reel": "Watch Reel"
+    }
+  },
+  "support": {
+    "title": "Support The Coffee Artist",
+    "subtitle": "Every coffee fuels new creations",
+    "selectLevel": "Select your support level",
+    "privateMessage": "Private Message",
+    "messagePlaceholder": "Say something nice...",
+    "payBtn": "Pay and Support",
+    "secureCheckout": "Secure encrypted checkout by Tlaktir",
+    "thankYou": "Thank you! Supporting with {coffees} coffee(s) for ${price}!"
+  }
+}

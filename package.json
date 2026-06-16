@@ -1,0 +1,43 @@
+{
+  "name": "tlaktir",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "^10.4.0",
+    "nuxt": "^4.4.8",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "daisyui": "^5.5.23",
+    "tailwindcss": "^4.3.0"
+  },
+  "overrides": {
+    "esbuild": "^0.28.1",
+    "vite": "^6.0.0",
+    "vite-node": "^6.0.0",
+    "nitropack": {
+      "esbuild": "^0.28.1"
+    },
+    "@intlify/bundle-utils": {
+      "esbuild": "^0.28.1"
+    },
+    "@intlify/unplugin-vue-i18n": {
+      "vite": "^6.0.0"
+    },
+    "@nuxt/devtools": {
+      "vite": "^6.0.0"
+    },
+    "@nuxt/vite-builder": {
+      "vite": "^6.0.0"
+    }
+  }
+}
