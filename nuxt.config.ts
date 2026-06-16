@@ -5,18 +5,19 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   sourcemap: false,
   modules: ['@nuxtjs/i18n'],
-
   css: ['~/assets/css/main.css'],
 
   vite: {
-    plugins: [
-      tailwindcss(),
-    ],
+    plugins: [tailwindcss()],
+    build: {
+      target: 'esnext',
+    },
     optimizeDeps: {
-      include: [
-        '@vue/devtools-core',
-        '@vue/devtools-kit',
-      ],
+      include: ['@vue/devtools-core', '@vue/devtools-kit'],
+      exclude: ['daisyui'],
+    },
+    esbuild: {
+      target: 'esnext',
     },
   },
 
