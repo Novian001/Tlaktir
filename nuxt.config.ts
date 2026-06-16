@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2025-01-01',
   devtools: { enabled: true },
-
+  sourcemap: false,
   modules: ['@nuxtjs/i18n'],
 
   css: ['~/assets/css/main.css'],
@@ -28,9 +28,6 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'id',
     strategy: 'no_prefix',
-    bundle: {
-      optimizeTranslationDirective: false,
-    },
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'tlaktir-locale',
